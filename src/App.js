@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { RiDeleteBin4Fill } from "react-icons/ri";
 
-function App() {
+export default function App() {
   let getLocalStorage = JSON.parse(localStorage.getItem("list"));
 
   const [textInp, setTextInp] = useState("");
@@ -131,5 +131,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
